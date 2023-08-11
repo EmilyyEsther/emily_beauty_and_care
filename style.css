@@ -1,0 +1,81 @@
+
+
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    background: #ffffff;
+  }
+  
+  #navbarSupportedContent{
+    padding-top: 15px;
+    font-size: 25px;
+
+  }
+
+  .button-checkout {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding para controlar el tamaño del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.button-checkout:hover {
+    background-color: rgb(189, 252, 176); /* Cambio de color en el hover */
+    color: white;
+}
+
+/* Estilos personalizados */
+.button-checkout {
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  padding: 8px 15px; /* Ajusta el padding para controlar el tamaño del botón */
+  font-size: 14px; /* Tamaño de la fuente */
+  border-radius: 3px; /* Borde redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.button-checkout:hover {
+  background-color: rgb(189, 252, 176); /* Cambio de color en el hover */
+}
+
+/* Otros estilos */
+/* ... */
+
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Cambia el color de fondo del footer */
+footer {
+  background-color: #b1beb1; /* Cambia el color (#FFD700 es amarillo) */
+  color: #FFFFFF; /* Cambia el color del texto a blanco */
+  padding: 10px; /* Agrega un espacio alrededor del contenido del footer */
+}
+/* Estilos para el enlace de Instagram en el footer */
+.instagram-link {
+  text-decoration: none; /* Quitar la subrayado del enlace */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Grosor del texto */
+  transition: color 0.3s ease; /* Transición de color suave al pasar el mouse */
+}
+
+.instagram-link:hover {
+  color: #e4405f; /* Cambio de color al pasar el mouse */
+}

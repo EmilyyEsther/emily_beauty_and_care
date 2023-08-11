@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EmilyB&C</title>
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head> 
+<body>
+  
+  
+   <div class="page-nav">
+   <img src="./img/logo2.png" alt="" srcset="" height="80px">
+   </div>
+
+   <div>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"  >Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="height: 50px;" href="./img/pipipi.jpg">link</a>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más
+              </a>
+                      
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#seccion-belleza">Belleza</a></li>
+                  <li><a class="dropdown-item" href="#seccion-bolsos">Bolsos y atuendos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#seccion-otros">Otros</a></li>
+              </ul>
+          </li>
+          
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-6" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+          <button id="pagar" class="button-checkout" onclick="emily()">Pagar</button>
+        </form>
+      
+      </div>
+      </div>
+    </div>
+  </nav>
+
+   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/cartera ori.jpg" class="d-block w-100" alt="..." height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/cartera4.webp" class="d-block w-100" alt="..." height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/cartera2.jpg" class="d-block w-100" alt="..." height="600px">
+      </div>
+
+  
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  <footer>
+    <section id="seccion-belleza">
+      <p style="font-weight: bold; font-size: 24px;">Belleza</p>
+      <!-- Contenido relacionado con belleza -->
+    
+
+
+</footer>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/yeye.jpeg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Corrector</h5>
+          <p class="card-text">Es la prebase ideal para la sombra de ojos y los labiales. Crea una base uniforme para una aplicación suave e incluso ayuda a que tus productos duren más. Solo aplica una pequeña cantidad en los párpados y/o labios y difumínalo suavemente con los dedos.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+          
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-1', 20)">agregar al carrito</button>
+
+              
+            </div>
+            
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/yyy.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Iluminador</h5>
+          <p class="card-text">El iluminador sirve para resaltar las facciones de tu rostro. Además, le da luz a tu mirada, dándole un toque de vitalidad increíble.  </p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$15</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-2', 15)">agregar al carrito</button>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/blytr.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rosa</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-3', 20)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/masakeador capilar.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">masajeador capilar</h5>
+          <p class="card-text">El masaje capilar, en definitiva, no solo se aplica para relajar tensiones, sino también para ayudar a retrasar y evitar la caída del cabello. Las propiedades de un buen masaje de este tipo fortalecerán el cuero cabelludo para que el pelo luzca más brillante, saludable y resistente.</p>
+        </div>
+        <div class="card-footer">
+           <div class="product-container">
+            <h1>$10</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-4', 10)">agregar al carrito</button>
+
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/belleza2.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Base</h5>
+          <p class="card-text">La base de maquillaje es un producto que ayuda a que la piel luzca un mejor aspecto, de igual manera puede ayudar a disminuir la apariencia de algunas imperfecciones. </p>
+        </div>
+        <div class="card-footer">
+          <div class="product-container">
+            <h1>$20</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-5', 20)">agregar al carrito</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/djnrgd.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rojo coral</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$20</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-6', 20)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/3333.4.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Polvo sellador</h5>
+          <p class="card-text">El polvo compacto lo puedes aplicar directamente sobre el rostro limpio y humectado o para sellar el maquillaje que previamente has realizado. En cualquier caso, tu piel lucirá matificada y uniforme.
+          </p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+            <h1>$15</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-7', 15)">agregar al carrito</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/belleza9.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h5 class="card-title">Paleta de colores</h5>
+          <p class="card-text">Las paletas de sombras son un producto esencial en el maquillaje, ya que permiten iluminar y aportar profundidad a la mirada. Son perfectas tanto para crear looks diarios y básicos, como para conseguir una estética llamativa en ocasiones especiales.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+              <h1>$40</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-8', 40)">agregar al carrito</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/labial111.jpg" class="card-img-top" alt="..." height="350">
+        <div class="card-body">
+          <h5 class="card-title">Brillo rosa pastel</h5>
+          <p class="card-text">El brillo labial es la opción perfecta para dar un toque de volumen y aspecto jugoso a nuestros labios, además generalmente aportan un aspecto más fresco y natural ya que usualmente se llevan en tonos suaves.</p>
+        </div>
+        <div class="card-footer">
+            <div class="product-container">
+                <h1>$10</h1>
+                <button class="btn btn-secondary btn-sm" onclick="add('producto-9', 10)">agregar al carrito</button>
+
+               </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+      </div>
+  </div>
+  <section></section>
+  <footer>
+    <section id="seccion-bolsos">
+      <p style="font-weight: bold; font-size: 24px;">Bolsos y atuendos</p>
+      <!-- Contenido relacionado con bolsos -->
+  </section>
+
+</footer>
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/bolsakuromi.webp" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Bolsa de Kuromi</h5>
+        <p class="card-text">Está especialmente diseñado para snacks, labiales, pañuelos y otras cosas pequeñas. Es muy adecuado para viajes, compras, ir al parque, fiestas y uso diario.
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+          <h1>$25</h1>
+          <button class="btn btn-secondary btn-sm" onclick="add('producto-10', 25)">agregar al carrito</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/bolsahk.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Bolsa de Hello Kitty</h5>
+        <p class="card-text">Prepárate para lucir súper cute con el Bolso de Viaje de Hello Kitty! Será tu acompañante en todas tus aventuras. Roba miradas a dónde vayas</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+            <h1>$25</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-11', 25)">agregar al carrito</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/bolsacinnamonroll.jpeg" class="card-img-top" alt="..." height="350">
+      <div class="card-body">
+        <h5 class="card-title">Bolsa de cinnamonroll</h5>
+        <p class="card-text">Está especialmente diseñado para snacks, labiales, pañuelos y otras cosas pequeñas. Es muy adecuado para viajes, compras, ir al parque, fiestas y uso diario.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+              <h1>$25</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-12', 25)">agregar al carrito</button>
+
+             </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/bolsodehk.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Bolsa de Hello Kitty </h5>
+        <p class="card-text">Prepárate para lucir súper cute con el Bolso de Viaje de Hello Kitty! Será tu acompañante en todas tus aventuras. Roba miradas a dónde vayas
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+          <h1>$25</h1>
+          <button class="btn btn-secondary btn-sm" onclick="add('producto-13', 25)">agregar al carrito</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/bolsa rosa de hk.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Bolsa de Hello Kitty rosa</h5>
+        <p class="card-text">Prepárate para lucir súper cute con el Bolso de Viaje de Hello Kitty! Será tu acompañante en todas tus aventuras. Roba miradas a dónde vayas</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+            <h1>$40</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-14', 40)">agregar al carrito</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/atuendo1.jpg" class="card-img-top" alt="..." height="350">
+      <div class="card-body">
+        <h5 class="card-title">Atuendo casual a juego</h5>
+        <p class="card-text">
+          looks cómodos, funcionales y prácticos. Este tipo de estilo es relajado y moderno. La ropa casual es inmejorable para el día a día y la puedes adaptar perfectamente a todo tipo de situaciones.
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+              <h1>$50</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-15', 50)">agregar al carrito</button>
+
+             </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/sueter1.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Suéter blanco</h5>
+        <p class="card-text">Todo el mundo usa y necesita más de un buen suéter. Cuando la temperatura empieza a bajar y los días se van poniendo más grises, un suéter es el elemento esencial para crear un buen outfit que proteja del frío y tenga estilo, es ideal para vestir con capas, para llevar solo o para complementar todo tipo de looks.
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+          <h1>$20</h1>
+          <button class="btn btn-secondary btn-sm" onclick="add('producto-16', 20)">agregar al carrito</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/sueter2.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Suéter gris</h5>
+        <p class="card-text">Todo el mundo usa y necesita más de un buen suéter. Cuando la temperatura empieza a bajar y los días se van poniendo más grises, un suéter es el elemento esencial para crear un buen outfit que proteja del frío y tenga estilo, es ideal para vestir con capas, para llevar solo o para complementar todo tipo de looks.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+            <h1>$20</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-17', 20)">agregar al carrito</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/sueter 3.jpg" class="card-img-top" alt="..." height="350">
+      <div class="card-body">
+        <h5 class="card-title">Suéter negro</h5>
+        <p class="card-text">Todo el mundo usa y necesita más de un buen suéter. Cuando la temperatura empieza a bajar y los días se van poniendo más grises, un suéter es el elemento esencial para crear un buen outfit que proteja del frío y tenga estilo, es ideal para vestir con capas, para llevar solo o para complementar todo tipo de looks.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+              <h1>$30</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-18', 30)">agregar al carrito</button>
+
+             </div>
+             
+             
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  
+  <section id="seccion-otros">
+    <p style="font-weight: bold; font-size: 24px;">Otros</p>
+    <!-- Contenido relacionado con otros -->
+</section>
+
+</footer>
+
+
+
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/collares de resina.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Collares de resina</h5>
+        <p class="card-text">Un hermoso collar con colgantes únicos, lleno de flores reales.
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+          <h1>$5.00</h1>
+          <button class="btn btn-secondary btn-sm" onclick="add('producto- 19', 5)">agregar al carrito</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/anillo.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Anillos de resina</h5>
+        <p class="card-text">Anillo de resina de flores secas hecho a mano de bosque transparente para mujer, anillo de joyería de moda.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+            <h1>$5.00</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-20', 5)">agregar al carrito</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/anillo2.jpg" class="card-img-top" alt="..." height="350">
+      <div class="card-body">
+        <h5 class="card-title">Anillos de resina</h5>
+        <p class="card-text">Anillo de resina de flores secas hecho a mano de bosque transparente para mujer, anillo de joyería de moda.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+              <h1>$5.00</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-21', 5)">agregar al carrito</button>
+
+             </div>
+             
+             
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/conejo.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Conejito de Crochet</h5>
+        <p class="card-text">Conejito tejido a mano, que puedes utilizar como adorno o para tu bebe.
+        </p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+          <h1>$20</h1>
+          <button class="btn btn-secondary btn-sm" onclick="add('producto-22', 20)">agregar al carrito</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/conejo con sombrero.jpg" class="card-img-top" alt="..." height="350px">
+      <div class="card-body">
+        <h5 class="card-title">Conejito de Crochet con sombrero</h5>
+        <p class="card-text">Conejito tejido a mano, que puedes utilizar como adorno o para tu bebe.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+            <h1>$20</h1>
+            <button class="btn btn-secondary btn-sm" onclick="add('producto-23', 20)">agregar al carrito</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/baquita.jpg" class="card-img-top" alt="..." height="350">
+      <div class="card-body">
+        <h5 class="card-title">Vaca de Crochet</h5>
+        <p class="card-text">Vaca tejida a mano, que puedes utilizar como adorno o para tu bebe.</p>
+      </div>
+      <div class="card-footer">
+          <div class="product-container">
+              <h1>$30</h1>
+              <button class="btn btn-secondary btn-sm" onclick="add('producto-24', 30)">agregar al carrito</button>
+
+          </div>    
+      </div>
+    </div>
+  </div>
+</div>
+             
+       
+
+
+</div>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-secondary">1</button>
+      <button type="button" class="btn btn-secondary">2</button>
+      <button type="button" class="btn btn-secondary">3</button>
+      <button type="button" class="btn btn-secondary">más</button>
+    </div>
+
+    </div>
+
+    <footer> 
+
+      <footer>
+        <footer>
+          <footer>
+            <!-- Otros contenidos del footer -->
+        
+            <a class="instagram-link" href="https://www.instagram.com/emily.l.q.b/" target="_blank">Mi perfil de Instagram</a>
+        </footer>
+        
+      </footer>
+      
+    </footer>
+    
+
+    </footer>
+
+  <script src="java.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
